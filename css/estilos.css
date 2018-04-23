@@ -1,12 +1,24 @@
 body {
-	margin: 20px;
-	background-color: black;
-	color: white;
-	font-family: Raleway;
+	margin: 0;
+	background: #02010a;
 }
 
 header h1{
-	text-align: center;
+	padding: 20px;
+	border-radius: 10px 10px 0px 0px;
+	-moz-border-radius: 10px 10px 0px 0px;
+	-webkit-border-radius: 10px 10px 0px 0px;
+	text-align: left;
+	background-color: #5b7989;
+	text-shadow: 2px 2px 2px #02010a;
+	color: white;
+	font-family: "Dancing Script";
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+
 }
 
 #contenido {
