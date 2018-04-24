@@ -43,6 +43,8 @@
 
 #banner {
 	background-color: #669999;
+  padding-top: 10px;
+  padding-bottom: 10px;
 	text-align: center;
 	margin-left: 90px;
 	margin-right: 90px;
@@ -50,7 +52,17 @@
 
 #imagen1 img{
 	border: 2px solid black;
-	width: 50%;
+	width: 80%;
+	text-shadow: 2px 2px 2px #02010a;
+}
+#imagen2 img{
+	border: 2px solid black;
+	width: 80%;
+	text-shadow: 2px 2px 2px #02010a;
+}
+#imagen3 img{
+	border: 2px solid black;
+	width: 80%;
 	text-shadow: 2px 2px 2px #02010a;
 }
 
