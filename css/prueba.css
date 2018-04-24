@@ -1,0 +1,51 @@
+
+#Encabezado{
+	display: block;
+	margin: 0 auto;
+}
+#contenido {
+	display: flex;
+	flex-direction: column;
+}
+
+#banner {
+	background-color: #669999;
+}
+
+#imagen1 img{
+	border: 2px solid black;
+	width: 50%;
+	text-shadow: 2px 2px 2px #02010a;
+}
+
+#Contenedor{
+	background: #02010a;
+	font-family: "Dancing Script";
+	font-size: 18px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+}
+
+footer {
+	margin-top: 10px;
+	padding-top: 10px;
+	text-align: center;
+}
+
+.contenedor {
+	display: flex;
+	flex-direction: row;
+}
+
+.contenedor-primera-imagen > div {
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+	width: 80%;
+}
+
+.adaptativa-porcentaje{
+	width:100%;
+}
