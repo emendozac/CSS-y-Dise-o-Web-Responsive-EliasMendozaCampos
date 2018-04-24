@@ -1,44 +1,4 @@
 
-#Encabezado{
-	display: block;
-	margin: 0 auto;
-}
-#contenido {
-	display: flex;
-	flex-direction: column;
-}
-
-#banner {
-	background-color: #669999;
-}
-
-#imagen1 img{
-	border: 2px solid black;
-	width: 50%;
-	text-shadow: 2px 2px 2px #02010a;
-}
-
-#Contenedor{
-	background: #02010a;
-	font-family: "Dancing Script";
-	font-size: 18px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 500;
-	line-height: 26.4px;
-}
-
-footer {
-	margin-top: 10px;
-	padding-top: 10px;
-	text-align: center;
-}
-
-.contenedor {
-	display: flex;
-	flex-direction: row;
-}
-
 .contenedor-primera-imagen > div {
 	text-align: center;
 	padding: 10px;
@@ -48,4 +8,131 @@ footer {
 
 .adaptativa-porcentaje{
 	width:100%;
+}
+
+
+
+==========================
+
+body{
+-webkit-font-smoothing: antialiased;
+font-family: "Dancing Script";
+font-weight: 300;
+font-weight: 400;
+height: auto !important;
+height: 100%;
+min-height: 100%;
+text-rendering: optimizeLegibility;
+}
+
+header {
+	border-bottom: 1px solid rgba(0,0,0,.15);
+	display: flex;
+	flex-direction: column;
+	text-align: right;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    -webkit-margin-before: 0.67em;
+    -webkit-margin-after: 0.67em;
+    -webkit-margin-start: 10px;
+    -webkit-margin-end: 400px;
+    font-weight: bold;
+}
+
+
+#Contenedor{
+	margin: 0 auto;
+	width: 900px;
+	background: #02010a;
+}
+
+#Encabezado{
+	margin: 0 auto;
+	padding: 10px;
+	border-radius: 10px 10px 0px 0px;
+	text-align: left;
+	background-color: #5b7989;
+	text-shadow: 2px 2px 2px #02010a;
+	color: white;
+	font-family: "Dancing Script";
+	font-size: 12px;
+	margin-left: 90px;
+	margin-right: 90px;
+	display: block;
+}
+
+#Menu {
+	margin: 0 auto;
+	font-family: "Dancing Script";
+	font-size: 20px;
+	text-align: right;
+}
+
+#menu-principal ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#menu-principal ul li a {
+	width: 100px;
+	height: 30px;
+	margin-left: -50px;
+	float: right;
+	text-align: right;
+	line-height: 30px;
+	font-size: 20px;
+	color: white;
+	text-decoration: none;
+}
+
+#menu-principal ul li a:hover{
+	color: black;
+}
+
+#Menu {
+	margin: 0 auto;
+	font-family: "Dancing Script";
+	font-size: 20px;
+	text-align: right;
+	display: inline;
+}
+
+#menu-principal ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#menu-principal ul li a {
+	display: inline;
+	width: 100px;
+	height: 30px;
+	margin-left: -50px;
+	float: right;
+	text-align: right;
+	line-height: 30px;
+	font-size: 20px;
+	color: white;
+	text-decoration: none;
+}
+
+#menu-principal ul li a:hover{
+	color: black;
+}
+
+#banner {
+	background-color: #669999;
+	text-align: center;
+	margin-left: 90px;
+	margin-right: 90px;
+}
+#PiePagina {
+  padding: 20px;
+	background-color: #C6d5c5;
+	margin-left: 90px;
+	margin-right: 90px;
 }
