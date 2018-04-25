@@ -1,6 +1,17 @@
+.slider{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+
+
 #Contenedor {
 	margin: 0 auto;
-	background: #02010a;
+	background-color: #02010a;
 	font-weight: bold;
 	text-rendering: optimizeLegibility;
 	font-family: "Dancing Script";
@@ -9,21 +20,17 @@
 	font-size: 1em;
 }
 
-#Encabezado{
+.Encabezado {
 	margin: 0 auto;
+	background-color: #5b7989;
 	padding: 20px;
 	border-radius: 10px 10px 0px 0px;
 	text-align: left;
-	background-color: #5b7989;
 	text-shadow: 1px 2px 3px #02010a;
 	color: white;
+	width: 80%;
 	margin-left: 90px;
 	margin-right: 90px;
-}
-
-#Encabezado {
-	padding: 4vh 4vw;
-	margin-bottom: 0vh;
 }
 
 #Encabezado h1 {
@@ -180,11 +187,12 @@
 footer {
 	background-color: #C6d5c5;
 	margin: 0 auto;
-	padding: 20px;
+	padding: 10px;
 	text-align: justify;
 	color: black;
 	margin-left: 90px;
 	margin-right: 90px;
+	border-radius: 0px 0px 10px 10px;
 
 	}
 	.piepagina-contenedor{
@@ -196,7 +204,7 @@ footer {
 		width: 98%;
 		max-width: 1000px;
 		margin: auto;
-		padding: 50px 0;
+		padding: 2px 0;
 		display: flex;
 		flex-wrap: wrap;
 	}
@@ -212,10 +220,12 @@ footer {
 	}
 
 	.piepagina-menu .footer-columna span p{
+		font-family: "Dancing Script";
 		display: inline-block;
+		margin-top: 0px;
 		margin-left: 5px;
-		margin-bottom: 15px
-
+		margin-bottom: 15px;
+		font-size: 18px;
 	}
 
 #imagen1 img{
@@ -278,65 +288,23 @@ footer {
 }
 
 
-/* Smartphones (portrait & landscape) */
-@media only screen
-and (min-device-width : 320px)
-and (max-device-width : 480px) {
+@media (min-width: 600px) {
+	.slider {
+		width: 25%;
+	}
+
+	.nav-contenedor {
+		width: 75%;
+	}
 
 }
 
-/* Smartphones (landscape) */
-@media only screen
-and (min-width : 321px) {
-
-}
-
-/* Smartphones (portrait) */
-@media only screen
-and (max-width : 320px) {
-
-}
-
-/* iPads (portrait & landscape) */
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px) {
-
-}
-
-/* iPads (landscape) */
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)
-and (orientation : landscape) {
-
-}
-
-/* iPads (portrait) */
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)
-and (orientation : portrait) {
-
-}
-
-/* Ordenadores de sobremesa y portátiles */
-@media only screen
-and (min-width : 1224px) {
-
-}
-
-/* Pantallas grandes */
-@media only screen
-and (min-width : 1824px) {
-
-}
-
-/* iPhone 4 */
-@media
-only screen and (-webkit-min-device-pixel-ratio : 1.5),
-only screen and (min-device-pixel-ratio : 1.5) {
-
+@media (min-width: 800px) {
+	.slider {
+		width: 800px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
 @keyframes animacion {
