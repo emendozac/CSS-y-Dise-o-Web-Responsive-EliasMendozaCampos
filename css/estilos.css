@@ -1,30 +1,43 @@
-#Contenedor{
+#Contenedor {
 	margin: 0 auto;
-	width: 900px;
 	background: #02010a;
+	font-weight: bold;
 	text-rendering: optimizeLegibility;
-
+	font-family: "Dancing Script";
+	width: 80%;
+	margin-left: 5%;
+	font-size: 1em;
+	color: blue;
 }
+
 #Encabezado{
 	margin: 0 auto;
 	padding: 20px;
 	border-radius: 10px 10px 0px 0px;
 	text-align: left;
 	background-color: #5b7989;
-	text-shadow: 2px 2px 2px #02010a;
+	text-shadow: 1px 2px 3px #02010a;
 	color: white;
-	font-family: "Dancing Script";
-	font-size: 12px;
 	margin-left: 90px;
 	margin-right: 90px;
 }
+
+#Encabezado {
+	padding: 4vh 4vw;
+	margin-bottom: 0vh;
+}
+
+#Encabezado h1 {
+	font-size: 1.5em;
+}
+
 #menu-principal ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 
 }
-#menu-principal ul li a {
+#menu-principal ul li a{
 	display: inline;
 	width: 120px;
 	height: 30px;
@@ -37,11 +50,12 @@
 	text-decoration: none;
 
 }
+
 #menu-principal ul li a:hover{
-	color: black;
+	color: red;
 }
 
-#banner {
+#resumen {
 	background-color: #669999;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -50,20 +64,13 @@
 	margin-right: 90px;
 }
 
-#imagen1 img{
-	border: 2px solid black;
-	width: 80%;
-	text-shadow: 2px 2px 2px #02010a;
+#contenido{
+	margin: 0%;
+	text-align: center;
 }
-#imagen2 img{
-	border: 2px solid black;
-	width: 80%;
-	text-shadow: 2px 2px 2px #02010a;
-}
-#imagen3 img{
-	border: 2px solid black;
-	width: 80%;
-	text-shadow: 2px 2px 2px #02010a;
+
+#Dosfotos h3{
+	font-size: 2em;
 }
 
 #Dosfotos {
@@ -88,8 +95,84 @@
 	background-color: #C6d5c5;
 	margin-left: 90px;
 	margin-right: 90px;
+	font-size: .75em;
+	text-decoration: underline;
 }
 
-.adaptativa-porcentaje{
-	width:100%;
+#imagen1 img{
+	border: 2px solid black;
+	width: 50%;
+	text-shadow: 2px 2px 2px #02010a;
+}
+#imagen2 img{
+	border: 2px solid black;
+	width: 80%;
+	text-shadow: 2px 2px 2px #02010a;
+}
+#imagen3 img{
+	border: 2px solid black;
+	width: 80%;
+	text-shadow: 2px 2px 2px #02010a;
+}
+
+
+/* Smartphones (portrait & landscape) */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+
+}
+
+/* Smartphones (landscape) */
+@media only screen
+and (min-width : 321px) {
+
+}
+
+/* Smartphones (portrait) */
+@media only screen
+and (max-width : 320px) {
+
+}
+
+/* iPads (portrait & landscape) */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+
+}
+
+/* iPads (landscape) */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+
+}
+
+/* iPads (portrait) */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+
+}
+
+/* Ordenadores de sobremesa y portátiles */
+@media only screen
+and (min-width : 1224px) {
+
+}
+
+/* Pantallas grandes */
+@media only screen
+and (min-width : 1824px) {
+
+}
+
+/* iPhone 4 */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+
 }
