@@ -356,5 +356,5 @@ only screen and (min-device-pixel-ratio : 1.5) {
 
 .slider {
 	animation-name: animacion;
-	animation-duration: 5s;
+	animation-duration: 2s;
 }
