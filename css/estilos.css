@@ -90,25 +90,45 @@
 	width: 50%;
 }
 
-#PiePagina {
-	padding: 30px;
+footer {
 	background-color: #C6d5c5;
+	margin: 0 auto;
+	padding: 20px;
+	text-align: left;
+	text-shadow: 1px 2px 3px #02010a;
+	color: white;
 	margin-left: 90px;
 	margin-right: 90px;
-	font-size: .75em;
-	text-decoration: underline;
-}
+
+	}
+
+	footer section .column{
+	width: 30%;
+	float: left;
+	overflow: hidden;
+	margin-bottom: 20px;
+	}
 
 #imagen1 img{
 	border: 2px solid black;
 	width: 50%;
 	text-shadow: 2px 2px 2px #02010a;
 }
+
 #imagen2 img{
 	border: 2px solid black;
 	width: 80%;
 	text-shadow: 2px 2px 2px #02010a;
 }
+
+
+#imagen2 img:hover {
+	-moz-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
+  -webkit-transform: rotate(10deg);
+   transform: rotate(10deg);
+}
+
 #imagen3 img{
 	border: 2px solid black;
 	width: 80%;
