@@ -115,6 +115,14 @@
 	text-shadow: 2px 2px 2px #02010a;
 }
 
+#imagen3 img{
+	transition-property: width;
+	transition-duration: 0.5s;
+}
+
+#imagen3 img:hover{
+	width: 60%;
+}
 
 /* Smartphones (portrait & landscape) */
 @media only screen
