@@ -31,27 +31,33 @@
 	font-size: 1.5em;
 }
 
-#menu-principal ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-
+.nav-contenedor{
+	width: 100%
 }
-#menu-principal ul li a{
-	display: inline;
-	width: 120px;
-	height: 30px;
-	margin-left: 80px;
-	float: left;
-	text-align: justify;
-	line-height: 0px;
-	font-size: 20px;
+
+.nav-menu{
+	width: 98%;
+	max-width: 300px;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.nav-menu .nav-columna{
+	width: calc(100% /3);
+	text-align: right;
+}
+
+.nav-menu .nav-columna a{
+	font-size: 24px;
 	color: white;
-	text-decoration: none;
+	margin-bottom: 2px;
+	display: inline-block;
+	margin-left: 1px;
 
 }
 
-#menu-principal ul li a:hover{
+.nav-menu .nav-columna a:hover{
 	color: red;
 }
 
@@ -90,6 +96,88 @@
 	width: 50%;
 }
 
+.contenedor-fotos{
+	background-color: #F7D988;
+	text-align: center;
+	margin-left: 90px;
+	margin-right: 90px;
+}
+
+.contenedor-fotos .fotosarriba{
+	display: flex;
+	flex-direction: row;
+
+}
+
+.contenedor-fotos .fotosarriba .imagen1{
+	padding: 10px;
+	margin: 10px;
+	width: 80%;
+}
+.contenedor-fotos .fotosarriba .imagen2{
+	padding: 10px;
+	margin: 10px;
+	width: 80%;
+}
+.contenedor-fotos .fotosarriba .imagen3{
+	padding: 10px;
+	margin: 10px;
+	width: 80%;
+}
+.contenedor-fotos .fotosarriba .imagen1 img{
+	border: 2px solid black;
+	width: 80%;
+	text-shadow: 2px 2px 2px #02010a;
+}
+.contenedor-fotos .fotosarriba .imagen2 img{
+	border: 2px solid black;
+	width: 80%;
+	text-shadow: 2px 2px 2px #02010a;
+}
+.contenedor-fotos .fotosarriba .imagen3 img{
+	border: 2px solid black;
+	width: 80%;
+	text-shadow: 2px 2px 2px #02010a;
+}
+
+.contenedor-fotos .fotosabajo{
+	display: flex;
+	flex-direction: row;
+
+}
+
+.contenedor-fotos .fotosabajo .imagen1{
+	padding: 10px;
+	margin: 10px;
+	width: 80%;
+}
+.contenedor-fotos .fotosabajo .imagen2{
+	padding: 10px;
+	margin: 10px;
+	width: 80%;
+}
+.contenedor-fotos .fotosabajo .imagen3{
+	padding: 10px;
+	margin: 10px;
+	width: 80%;
+}
+.contenedor-fotos .fotosabajo .imagen1 img{
+	border: 2px solid black;
+	width: 80%;
+	text-shadow: 2px 2px 2px #02010a;
+}
+.contenedor-fotos .fotosabajo .imagen2 img{
+	border: 2px solid black;
+	width: 80%;
+	text-shadow: 2px 2px 2px #02010a;
+}
+.contenedor-fotos .fotosabajo .imagen3 img{
+	border: 2px solid black;
+	width: 80%;
+	text-shadow: 2px 2px 2px #02010a;
+}
+
+
 footer {
 	background-color: #C6d5c5;
 	margin: 0 auto;
@@ -100,44 +188,36 @@ footer {
 	margin-right: 90px;
 
 	}
-.piepagina-contenedor{
-	width: 100%
-	color: black;
-}
+	.piepagina-contenedor{
+		width: 100%
+		color: black;
+	}
 
-.piepagina-menu{
-	width: 98%;
-	max-width: 1000px;
-	margin: auto;
-	padding: 50px 0;
-	display: flex;
-	flex-wrap: wrap;
-}
+	.piepagina-menu{
+		width: 98%;
+		max-width: 1000px;
+		margin: auto;
+		padding: 50px 0;
+		display: flex;
+		flex-wrap: wrap;
+	}
 
-.piepagina-menu .footer-columna{
-	width: calc(100% /4);
-	text-align: justify;
-}
+	.piepagina-menu .footer-columna{
+		width: calc(100% /4);
+		text-align: justify;
+	}
+	.piepagina-menu .footer-columna h3{
+		font-size: 20px;
+		color: black;
+		margin-bottom: 20px;
+	}
 
-.piepagina-menu .footer-columna h3{
-	font-size: 20px;
-	color: black;
-	margin-bottom: 20px;
-}
+	.piepagina-menu .footer-columna span p{
+		display: inline-block;
+		margin-left: 5px;
+		margin-bottom: 15px
 
-.piepagina-menu .footer-columna span p{
-	display: inline-block;
-	margin-left: 5px;
-	margin-bottom: 15px
-
-}
-
-
-
-
-
-
-
+	}
 
 #imagen1 img{
 	border: 2px solid black;
@@ -145,7 +225,13 @@ footer {
 	text-shadow: 2px 2px 2px #02010a;
 }
 
+
 #imagen2 img{
+	border: 2px solid black;
+	width: 80%;
+	text-shadow: 2px 2px 2px #02010a;
+}
+#imagen3 img{
 	border: 2px solid black;
 	width: 80%;
 	text-shadow: 2px 2px 2px #02010a;
@@ -160,12 +246,6 @@ footer {
 }
 
 #imagen3 img{
-	border: 2px solid black;
-	width: 80%;
-	text-shadow: 2px 2px 2px #02010a;
-}
-
-#imagen3 img{
 	transition-property: width;
 	transition-duration: 0.5s;
 }
@@ -173,6 +253,31 @@ footer {
 #imagen3 img:hover{
 	width: 60%;
 }
+.contenedor-fotos .fotosarriba .imagen2 img{
+	-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+	filter: grayscale(100%);
+}
+.contenedor-fotos .fotosarriba .imagen1 img{
+	-webkit-filter: blur(10px); /* Chrome, Safari, Opera */
+	filter: blur(10px);
+}
+.contenedor-fotos .fotosarriba .imagen3 img{
+	-webkit-filter: invert(100%); /* Chrome, Safari, Opera */
+	filter: invert(100%);
+}
+.contenedor-fotos .fotosabajo .imagen1 img{
+	-webkit-filter: sepia(90%); /* Chrome, Safari, Opera */
+	filter: sepia(90%);
+}
+.contenedor-fotos .fotosabajo .imagen2 img{
+	-webkit-filter: sepia(90%); /* Chrome, Safari, Opera */
+	filter: sepia(90%);
+}
+.contenedor-fotos .fotosabajo .imagen3 img{
+	-webkit-filter: sepia(90%); /* Chrome, Safari, Opera */
+	filter: sepia(90%);
+}
+
 
 /* Smartphones (portrait & landscape) */
 @media only screen
