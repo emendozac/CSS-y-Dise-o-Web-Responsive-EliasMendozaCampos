@@ -94,20 +94,50 @@ footer {
 	background-color: #C6d5c5;
 	margin: 0 auto;
 	padding: 20px;
-	text-align: left;
-	text-shadow: 1px 2px 3px #02010a;
-	color: white;
+	text-align: justify;
+	color: black;
 	margin-left: 90px;
 	margin-right: 90px;
 
 	}
+.piepagina-contenedor{
+	width: 100%
+	color: black;
+}
 
-	footer section .column{
-	width: 30%;
-	float: left;
-	overflow: hidden;
+.piepagina-menu{
+	width: 98%;
+	max-width: 1000px;
+	margin: auto;
+	padding: 50px 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.piepagina-menu .footer-columna{
+	width: calc(100% /4);
+	text-align: justify;
+}
+
+.piepagina-menu .footer-columna h3{
+	font-size: 20px;
+	color: black;
 	margin-bottom: 20px;
-	}
+}
+
+.piepagina-menu .footer-columna span p{
+	display: inline-block;
+	margin-left: 5px;
+	margin-bottom: 15px
+
+}
+
+
+
+
+
+
+
 
 #imagen1 img{
 	border: 2px solid black;
