@@ -6,12 +6,10 @@
 		flex-flow: row wrap;
 		margin: 0 auto;
 		background-color: #02010a;
-		text-rendering: optimizeLegibility;
 		font-family: "Dancing Script";
 		width: 100%;
 		font-size: 20px;
 		color: white;
-		box-sizing: border-box;
 }
 
 /*Poner estilo al Encabezado del programa */
@@ -23,37 +21,64 @@
 	background-color: #5b7989;
 	padding: 10px;
 	border-radius: 10px 10px 0px 0px;
-	text-shadow: 1px 2px 3px #02010a;
+	text-shadow: 2px #02010a;
 	color: white;
-	margin-left: 220px;
-	margin-right: 90px;
+	margin-left: 10%;
+	margin-right: 10%;
 	font-size: 20px;
 }
-
+/* Ajusta el estilo del menu en la web */
 .menu li{
-	display: inline;
+  width: 100px;
 	list-style: none;
-	margin: 0px;
-	padding: 0px;
+	float: left;
 }
 
 .menu a{
-	padding-right: 10px;
 	color: white;
 	text-decoration: none;
 	font-size: 30px;
 	flex: 1;
-	display: inline;
-	justify-content: center;
-	align-items: center;
-	}
+	display: block;
+}
 
 .menu a:hover{
-		padding-right: 10px;
-		color: #ffffff;
 		background-color: #356AA0;
-		text-decoration: none;
 }
+
+/*Poner estilo al bloque del una imagen */
+
+#resumen {
+	background-color: #669999;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0 auto;
+	padding: 10px;
+	margin-left: 10%;
+	margin-right: 10%;
+	font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+	text-align: center;
+}
+/*Poner estilo al bloque del dos imagen */
+
+#Dosfotos {
+  background-color: #F7D988;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0 auto;
+	padding: 10px;
+	margin-left: 10%;
+	margin-right: 10%;
+	font-size: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
 
 /*Poner estilo al bloque del pie de pagina */
 
@@ -63,43 +88,44 @@
 	padding: 10px;
 	text-align: justify;
 	color: black;
-	margin-left: 90px;
-	margin-right: 90px;
+	margin-left: 10%;
+	margin-right: 10%;
 	border-radius: 0px 0px 10px 10px;
 	}
 
-	.piepagina-contenedor{
+.piepagina-contenedor{
 		width: 100%
 		color: black;
-	}
+}
 
-	.piepagina-menu{
+.piepagina-menu{
 		width: 100%;
 		max-width: 1000px;
 		margin: auto;
 		padding: 2px 0;
 		display: flex;
 		flex-wrap: wrap;
-	}
+}
 
-	.piepagina-menu .footer-columna{
+.piepagina-menu .footer-columna{
 		width: calc(100% /4);
 		text-align: justify;
-	}
-	.piepagina-menu .footer-columna h3{
+}
+
+.piepagina-menu .footer-columna h3{
 		font-size: 16px;
 		color: black;
 		margin-bottom: 20px;
-	}
+}
 
-	.piepagina-menu .footer-columna span p{
+.piepagina-menu .footer-columna span p{
 		font-family: "Dancing Script";
 		display: inline-block;
 		margin-top: 0px;
 		margin-left: 5px;
 		margin-bottom: 15px;
 		font-size: 12px;
-	}
+}
 
 /* FIN estilo al bloque del pie de pagina */
 
@@ -112,10 +138,171 @@
 /* FIN animacion del las paginas*/
 
 /* INICIO ajuste de las paginas */
-
-@media screen (max-width: 900px) {
+/* Desktop y laptop */
+@media screen (max-width: 1366px) and (min-width: 900px;) {
+	.Titulo h1 {
+	width: 100%;
+	height: 60px;
+	position: relative;
+	top: 80px;
+}
+.Encabezado {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 80%;
+	height: 10px;
+}
+.menu>li {
+	width: 18%
 }
 
-@media screen (min-width: 900px) {
+li>a {
+	line-height: 60px;
+	font-size: 16px;
+}
+}
+
+@media screen (max-width: 899px) and (min-width: 100px) {
+	.Titulo h1 {
+	width: 100%;
+	height: 10px;
+	font-size: 1px;
+}
+.Encabezado {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 20%;
+	height: 60px;
+	float: none;
+}
+.menu>li {
+	width: 100%
+	list-style: none;
+	float: none;
+}
+
+li>a {
+	display: block;
+	line-height: 60px;
+	font-size: 16px;
+}
 }
 /* INICIO ajuste de las paginas */
+
+#imagen1 img{
+	border: 2px solid black;
+	width: 50%;
+	text-shadow: 2px 2px 2px #02010a;
+}
+
+
+#imagen2 img{
+	border: 2px solid black;
+	width: 80%;
+	text-shadow: 2px 2px 2px #02010a;
+}
+#imagen3 img{
+	border: 2px solid black;
+	width: 80%;
+	text-shadow: 2px 2px 2px #02010a;
+}
+
+
+#imagen2 img:hover {
+	-moz-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
+  -webkit-transform: rotate(10deg);
+   transform: rotate(10deg);
+}
+
+#imagen3 img{
+	transition-property: width;
+	transition-duration: 0.5s;
+}
+
+#imagen3 img:hover{
+	width: 60%;
+}
+
+.contenedor-fotos{
+	background-color: #F7D988;
+	text-align: center;
+	margin-left: 90px;
+	margin-right: 90px;
+}
+
+.contenedor-fotos .fotosarriba{
+	display: flex;
+	flex-direction: row;
+
+}
+
+.contenedor-fotos .fotosarriba .imagen1{
+	padding: 10px;
+	margin: 10px;
+	width: 80%;
+}
+.contenedor-fotos .fotosarriba .imagen2{
+	padding: 10px;
+	margin: 10px;
+	width: 80%;
+}
+.contenedor-fotos .fotosarriba .imagen3{
+	padding: 10px;
+	margin: 10px;
+	width: 80%;
+}
+.contenedor-fotos .fotosarriba .imagen1 img{
+	border: 2px solid black;
+	width: 80%;
+	text-shadow: 2px 2px 2px #02010a;
+}
+.contenedor-fotos .fotosarriba .imagen2 img{
+	border: 2px solid black;
+	width: 80%;
+	text-shadow: 2px 2px 2px #02010a;
+}
+.contenedor-fotos .fotosarriba .imagen3 img{
+	border: 2px solid black;
+	width: 80%;
+	text-shadow: 2px 2px 2px #02010a;
+}
+
+.contenedor-fotos .fotosabajo{
+	display: flex;
+	flex-direction: row;
+
+}
+
+.contenedor-fotos .fotosabajo .imagen1{
+	padding: 10px;
+	margin: 10px;
+	width: 80%;
+}
+.contenedor-fotos .fotosabajo .imagen2{
+	padding: 10px;
+	margin: 10px;
+	width: 80%;
+}
+.contenedor-fotos .fotosabajo .imagen3{
+	padding: 10px;
+	margin: 10px;
+	width: 80%;
+}
+.contenedor-fotos .fotosabajo .imagen1 img{
+	border: 2px solid black;
+	width: 80%;
+	text-shadow: 2px 2px 2px #02010a;
+}
+.contenedor-fotos .fotosabajo .imagen2 img{
+	border: 2px solid black;
+	width: 80%;
+	text-shadow: 2px 2px 2px #02010a;
+}
+.contenedor-fotos .fotosabajo .imagen3 img{
+	border: 2px solid black;
+	width: 80%;
+	text-shadow: 2px 2px 2px #02010a;
+}
