@@ -1,188 +1,61 @@
-.slider{
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	display: -webkit-flex;
-	display: flex;
-	-webkit-flex-flow: row wrap;
-	flex-flow: row wrap;
+/*Poner estilo al cuerpo del programa */
+#Contenedorid {
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-flow: row wrap;
+		flex-flow: row wrap;
+		margin: 0 auto;
+		background-color: #02010a;
+		text-rendering: optimizeLegibility;
+		font-family: "Dancing Script";
+		width: 100%;
+		font-size: 20px;
+		color: white;
+		box-sizing: border-box;
 }
 
-
-#Contenedor {
-	margin: 0 auto;
-	background-color: #02010a;
-	font-weight: bold;
-	text-rendering: optimizeLegibility;
-	font-family: "Dancing Script";
-	width: 80%;
-	margin-left: 5%;
-	font-size: 1em;
-}
-
+/*Poner estilo al Encabezado del programa */
 .Encabezado {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 	margin: 0 auto;
 	background-color: #5b7989;
-	padding: 20px;
+	padding: 10px;
 	border-radius: 10px 10px 0px 0px;
-	text-align: left;
 	text-shadow: 1px 2px 3px #02010a;
 	color: white;
-	width: 80%;
-	margin-left: 90px;
+	margin-left: 220px;
 	margin-right: 90px;
+	font-size: 20px;
 }
 
-#Encabezado h1 {
-	font-size: 1.5em;
+.menu li{
+	display: inline;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
 }
 
-.nav-contenedor{
-	width: 100%
-}
-
-.nav-menu{
-	width: 98%;
-	max-width: 300px;
-	margin: auto;
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.nav-menu .nav-columna{
-	width: calc(100% /3);
-	text-align: right;
-}
-
-.nav-menu .nav-columna a{
-	font-size: 24px;
+.menu a{
+	padding-right: 10px;
 	color: white;
-	margin-bottom: 2px;
-	display: inline-block;
-	margin-left: 1px;
+	text-decoration: none;
+	font-size: 30px;
+	flex: 1;
+	display: inline;
+	justify-content: center;
+	align-items: center;
+	}
 
-}
-
-.nav-menu .nav-columna a:hover{
-	color: red;
-}
-
-#resumen {
-	background-color: #669999;
-  padding-top: 10px;
-  padding-bottom: 10px;
-	text-align: center;
-	margin-left: 90px;
-	margin-right: 90px;
+.menu a:hover{
+		padding-right: 10px;
+		color: #ffffff;
+		background-color: #356AA0;
+		text-decoration: none;
 }
 
-#contenido{
-	margin: 0%;
-	text-align: center;
-}
-
-#Dosfotos h3{
-	font-size: 2em;
-}
-
-#Dosfotos {
-  background-color: #F7D988;
-	text-align: center;
-	margin-left: 90px;
-	margin-right: 90px;
-	display: flex;
-	flex-direction: row;
-
-}
-
-#Dosfotos > div {
-	text-align: center;
-	padding: 10px;
-	margin: 10px;
-	width: 50%;
-}
-
-.contenedor-fotos{
-	background-color: #F7D988;
-	text-align: center;
-	margin-left: 90px;
-	margin-right: 90px;
-}
-
-.contenedor-fotos .fotosarriba{
-	display: flex;
-	flex-direction: row;
-
-}
-
-.contenedor-fotos .fotosarriba .imagen1{
-	padding: 10px;
-	margin: 10px;
-	width: 80%;
-}
-.contenedor-fotos .fotosarriba .imagen2{
-	padding: 10px;
-	margin: 10px;
-	width: 80%;
-}
-.contenedor-fotos .fotosarriba .imagen3{
-	padding: 10px;
-	margin: 10px;
-	width: 80%;
-}
-.contenedor-fotos .fotosarriba .imagen1 img{
-	border: 2px solid black;
-	width: 80%;
-	text-shadow: 2px 2px 2px #02010a;
-}
-.contenedor-fotos .fotosarriba .imagen2 img{
-	border: 2px solid black;
-	width: 80%;
-	text-shadow: 2px 2px 2px #02010a;
-}
-.contenedor-fotos .fotosarriba .imagen3 img{
-	border: 2px solid black;
-	width: 80%;
-	text-shadow: 2px 2px 2px #02010a;
-}
-
-.contenedor-fotos .fotosabajo{
-	display: flex;
-	flex-direction: row;
-
-}
-
-.contenedor-fotos .fotosabajo .imagen1{
-	padding: 10px;
-	margin: 10px;
-	width: 80%;
-}
-.contenedor-fotos .fotosabajo .imagen2{
-	padding: 10px;
-	margin: 10px;
-	width: 80%;
-}
-.contenedor-fotos .fotosabajo .imagen3{
-	padding: 10px;
-	margin: 10px;
-	width: 80%;
-}
-.contenedor-fotos .fotosabajo .imagen1 img{
-	border: 2px solid black;
-	width: 80%;
-	text-shadow: 2px 2px 2px #02010a;
-}
-.contenedor-fotos .fotosabajo .imagen2 img{
-	border: 2px solid black;
-	width: 80%;
-	text-shadow: 2px 2px 2px #02010a;
-}
-.contenedor-fotos .fotosabajo .imagen3 img{
-	border: 2px solid black;
-	width: 80%;
-	text-shadow: 2px 2px 2px #02010a;
-}
-
+/*Poner estilo al bloque del pie de pagina */
 
 #PiePagina {
 	background-color: #C6d5c5;
@@ -193,8 +66,8 @@
 	margin-left: 90px;
 	margin-right: 90px;
 	border-radius: 0px 0px 10px 10px;
-
 	}
+
 	.piepagina-contenedor{
 		width: 100%
 		color: black;
@@ -228,99 +101,21 @@
 		font-size: 12px;
 	}
 
-#imagen1 img{
-	border: 2px solid black;
-	width: 50%;
-	text-shadow: 2px 2px 2px #02010a;
-}
+/* FIN estilo al bloque del pie de pagina */
 
+/* INICIO animacion del las paginas*/
 
-#imagen2 img{
-	border: 2px solid black;
-	width: 80%;
-	text-shadow: 2px 2px 2px #02010a;
-}
-#imagen3 img{
-	border: 2px solid black;
-	width: 80%;
-	text-shadow: 2px 2px 2px #02010a;
-}
-
-
-#imagen2 img:hover {
-	-moz-transform: rotate(10deg);
-  -o-transform: rotate(10deg);
-  -webkit-transform: rotate(10deg);
-   transform: rotate(10deg);
-}
-
-#imagen3 img{
-	transition-property: width;
-	transition-duration: 0.5s;
-}
-
-#imagen3 img:hover{
-	width: 60%;
-}
-.contenedor-fotos .fotosarriba .imagen1 img{
-	-webkit-filter: blur(10px); /* Chrome, Safari, Opera */
-	filter: blur(10px);
-}
-.contenedor-fotos .fotosarriba .imagen2 img{
-	-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
-	filter: grayscale(100%);
-}
-.contenedor-fotos .fotosarriba .imagen3 img{
-	-webkit-filter: sepia(90%); /* Chrome, Safari, Opera */
-	filter: sepia(90%);
-}
-.contenedor-fotos .fotosabajo .imagen1 img{
-	-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
-	filter: grayscale(100%);
-}
-.contenedor-fotos .fotosabajo .imagen2 img{
-}
-.contenedor-fotos .fotosabajo .imagen3 img{
-	-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
-	filter: grayscale(100%);
-}
-
-
-@media (min-width: 600px) {
-	.slider {
-		width: 25%;
-	}
-
-	.nav-contenedor {
-		width: 75%;
-	}
-
-}
-
-@media (min-width: 800px) {
-	.slider {
-		width: 800px;
-		margin-left: auto;
-		margin-right: auto;
-	}
-}
-
-@keyframes animacion {
-	0% {
-		position: relative;
-		margin-top: 150%;
-	}
-	60% {
-		position: relative;
-		margin-top: -5%;
-	}
-	100% {
-		position: relative;
-		margin-top: 0%;
-}
-}
-
-.slider {
+.Contenedor {
 	animation-name: animacion;
 	animation-duration: 2s;
 }
+/* FIN animacion del las paginas*/
+
+/* INICIO ajuste de las paginas */
+
+@media screen (max-width: 900px) {
+}
+
+@media screen (min-width: 900px) {
+}
+/* INICIO ajuste de las paginas */
