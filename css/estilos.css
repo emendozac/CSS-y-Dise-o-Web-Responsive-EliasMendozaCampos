@@ -302,28 +302,24 @@ article
 	filter: sepia(90%);
 }
 
-@keyframes header-animacion {
+@keyframes animacion {
 	0% {
 		position: relative;
-		left: 0px
+		margin-top: 150%;
 	}
-	50% {
+	60% {
 		position: relative;
-		left: 500px;
+		margin-top: -5%;
 	}
 	100% {
 		position: relative;
-		left: 0px;
-	}
+		margin-top: 0%;
+}
 }
 
-header{
-	animation-name: header-animacion;
+header {
+	animation-name: animacion;
 	animation-duration: 2s;
-	-webkit-animation-delay: 1s;
-	-moz-animation-delay: 1s;
-	-o-animation-delay: 1s;
-	animation-delay: 1s;
 }
 
 
