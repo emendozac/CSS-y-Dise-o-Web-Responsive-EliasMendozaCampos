@@ -1,9 +1,13 @@
 body {
 	background-color: #02010a;
+	font-size: 16px;
+	display: block;
+
 }
+
 /*Poner estilo al Encabezado del programa */
 
-header
+#Cabecera
 {
 	display: flex;
 	flex-flow: row wrap;
@@ -20,6 +24,7 @@ header
 	font-family: "Dancing Script";
 	text-shadow: 2px 2px 2px #02010a;
 }
+
 /* Ajusta el estilo del menu en la web */
 .menu li{
   width: 180px;
@@ -38,35 +43,41 @@ header
 .menu a:hover{
 		background-color: #356AA0;
 }
-/*Espacio entre el encabezado y columnas */
+
 
 #Columas
 {
-	margin-left: 10%;
-	margin-right: 10%;
-
+	width: 960px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 article
 {
 	box-sizing: border-box;
 	float:left;
-	padding: 1%;
+	height: 100%;
+	background-color: grey;
+	padding: 2%;
 	text-align: center;
+	height: 400px;
 }
+
 /*Imagen Central en esta sección color del bloque*/
 	#columna1
 	{
 	background-color: #82c3a6;
 	width: 100%;
-	text-align: center;
-	height: 100%;
+
 	}
 	#columna1 img{
 		border: 2px solid black;
 		width: 90%;
 		text-shadow: 2px 2px 2px #02010a;
-		padding: 10px 10px 10px 40px;
+		padding: 10px 10px 10px 10px;
+		margin-right: 40px;
+		height: 100%;
+		text-align: center;
 
 	}
 
@@ -83,6 +94,7 @@ article
 		text-shadow: 2px 2px 2px #82c3a6;
 
 	}
+	/*Imagen secundaria en esta sección color del bloque*/
 
 	#columna3
 	{
@@ -93,15 +105,16 @@ article
 	#columna3 img{
 		border: 2px solid black;
 		width: 100%;
+		text-shadow: 2px 2px 2px #82c3a6;
 	}
 
 	/*Rotacion de la imagen paisajes*/
 
 	#columna2 img:hover {
 		-moz-transform: rotate(10deg);
-	  -o-transform: rotate(10deg);
-	  -webkit-transform: rotate(10deg);
-	   transform: rotate(10deg);
+		-o-transform: rotate(10deg);
+		-webkit-transform: rotate(10deg);
+		 transform: rotate(10deg);
 		 text-shadow: 2px 2px 2px #82c3a6;
 
 	}
@@ -115,6 +128,7 @@ article
 		transition-duration: 0.5s;
 
 	}
+
 
 	/*Poner estilo al bloque del pie de pagina */
 
@@ -152,18 +166,18 @@ article
 	}
 
 	.piepagina-menu .footer-columna h3{
-   		text-align: left;
+			text-align: left;
 			color: black;
 			margin-bottom: 20px;
 	}
 
 	.piepagina-menu .footer-columna span{
- 			text-align: left;
+			text-align: left;
 			color: black;
 		}
 
 	.piepagina-menu .footer-columna li{
-	  width: 180px;
+		width: 180px;
 		list-style: none;
 		float: left;
 
@@ -176,18 +190,47 @@ article
 	/* FIN estilo al bloque del pie de pagina */
 
 
-	@media all and (max-width: 640px) {
+@media screen and (max-width: 900px){
 
-	 body, #Cabecera, #Columnas, #PiePagina {
-		-webkit-flex-flow: column;
-						flex-flow: column;
-	 }
-
-	 #main > article, #main > nav, #main > aside {
-		/* Return them to document order */
-		-webkit-order: 0;
-						order: 0;
-	 }
-
-
+	#Columas, #Cabecera
+	{
+		width: 90%;
+		margin: 0 auto;
 	}
+
+}
+
+@media screen and (max-width: 640px){
+
+		#Columas, #Cabecera
+	{
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 900px){
+
+				#Columas, #Cabecera
+				{
+					width: 100%;
+					margin: 0 auto;
+				}
+				#columna1
+				{
+				width: 100%;
+				}
+				#columna2
+				{
+				width: 100%;
+				}
+				#columna3
+				{
+				width: 100%;
+				}
+
+				header
+				{
+				width:100%;
+				}
+}
