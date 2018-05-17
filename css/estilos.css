@@ -302,6 +302,30 @@ article
 	filter: sepia(90%);
 }
 
+@keyframes header-animacion {
+	0% {
+		position: relative;
+		left: 0px
+	}
+	50% {
+		position: relative;
+		left: 500px;
+	}
+	100% {
+		position: relative;
+		left: 0px;
+	}
+}
+
+header{
+	animation-name: header-animacion;
+	animation-duration: 2s;
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	-o-animation-delay: 1s;
+	animation-delay: 1s;
+}
+
 
 /*Utiliza media queries para manejar dos tamaños Desktop: con ancho de 900px o más y móvil con menos de 900px. */
 @media screen and (max-width: 900px){
