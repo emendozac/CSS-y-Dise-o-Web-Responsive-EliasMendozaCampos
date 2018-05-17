@@ -84,54 +84,6 @@
 }
 
 
-/*Poner estilo al bloque del pie de pagina */
-
-#PiePagina {
-	background-color: #C6d5c5;
-	margin: 0 auto;
-	padding: 10px;
-	text-align: justify;
-	color: black;
-	margin-left: 10%;
-	margin-right: 10%;
-	border-radius: 0px 0px 10px 10px;
-	}
-
-.piepagina-contenedor{
-		width: 100%
-		color: black;
-}
-
-.piepagina-menu{
-		width: 100%;
-		max-width: 1000px;
-		margin: auto;
-		padding: 2px 0;
-		display: flex;
-		flex-wrap: wrap;
-}
-
-.piepagina-menu .footer-columna{
-		width: calc(100% /4);
-		text-align: justify;
-}
-
-.piepagina-menu .footer-columna h3{
-		font-size: 16px;
-		color: black;
-		margin-bottom: 20px;
-}
-
-.piepagina-menu .footer-columna span p{
-		font-family: "Dancing Script";
-		display: inline-block;
-		margin-top: 0px;
-		margin-left: 5px;
-		margin-bottom: 15px;
-		font-size: 12px;
-}
-
-/* FIN estilo al bloque del pie de pagina */
 
 /* INICIO animacion del las paginas*/
 
@@ -288,4 +240,208 @@ li>a {
 	padding: 10px;
 	margin: 10px;
 	width: 50%;
+}
+
+
+
+======================================================
+=======================================================
+
+/*Poner estilo al cuerpo del programa */
+body{
+	color: white;
+	background-color: #02010a;
+	font-family: "Dancing Script";
+	font-size: 16px;
+	font-family: sans-serif;
+	display: block;
+}
+
+/*Poner estilo al Encabezado del programa */
+
+header
+{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0 auto;
+	height: 1em;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	text-align: center;
+	background-color: grey;
+	color:white;
+	padding-left: 260;
+	padding-right: 360;
+}
+
+
+/* Ajusta el estilo del menu en la web */
+.menu li{
+  width: 180px;
+	list-style: none;
+	float: left;
+
+}
+
+.menu a{
+	color: white;
+	text-decoration: none;
+	font-size: 50px;
+}
+
+.menu a:hover{
+		background-color: #356AA0;
+}
+
+#Columas
+{
+	width: 960px;
+	margin: 0 auto;
+}
+
+article
+{
+	box-sizing: border-box;
+	float:left;
+	height: 100%;
+	background-color: grey;
+	padding: 2%;
+	text-align: center;
+	height: 400px;
+}
+
+	#columna1
+	{
+	background-color: #91C9E8;
+	width: 100%;
+
+	}
+	#columna2
+	{
+	background-color: #D1D1D1;
+	width: 50%;
+	}
+	#columna3
+	{
+	background-color: #3399CC;
+	width: 50%;
+	}
+
+
+@media screen and (max-width: 900px){
+
+			#Columas
+				{
+					width: 100%;
+					margin: 0 auto;
+				}
+				#columna1
+				{
+				width: 100%;
+				}
+				#columna2
+				{
+				width: 100%;
+				}
+				#columna3
+				{
+				width: 100%;
+				}
+
+				header
+				{
+				width:100%;
+				}
+}
+
+
+/*Poner ajuste de acuerdo si es desktop o movil*/
+
+/* Desktop y laptop */
+
+
+
+==========================================
+==========================================
+
+body {
+ font: 24px Helvetica;
+ background: #999999;
+}
+
+#main {
+ min-height: 800px;
+ margin: 0px;
+ padding: 0px;
+ display: -webkit-flex;
+ display:         flex;
+ -webkit-flex-flow: row;
+				 flex-flow: row;
+				 flex-flow: row wrap;
+
+ }
+
+#main > article {
+ margin: 4px;
+ padding: 5px;
+ border: 1px solid #cccc33;
+ border-radius: 7pt;
+ background: #dddd88;
+ -webkit-flex: 3 1 60%;
+				 flex: 3 1 60%;
+ -webkit-order: 2;
+				 order: 2;
+ }
+
+#main > nav {
+ margin: 4px;
+ padding: 5px;
+ border: 1px solid #8888bb;
+ border-radius: 7pt;
+ background: #ccccff;
+ -webkit-flex: 1 6 20%;
+				 flex: 1 6 20%;
+ -webkit-order: 1;
+				 order: 1;
+ }
+
+#main > aside {
+ margin: 4px;
+ padding: 5px;
+ border: 1px solid #8888bb;
+ border-radius: 7pt;
+ background: #ccccff;
+ -webkit-flex: 1 6 20%;
+				 flex: 1 6 20%;
+ -webkit-order: 3;
+				 order: 3;
+ }
+
+header, footer {
+ display: block;
+ margin: 4px;
+ padding: 5px;
+ min-height: 100px;
+ border: 1px solid #eebb55;
+ border-radius: 7pt;
+ background: #ffeebb;
+ }
+
+/* Too narrow to support three columns */
+@media all and (max-width: 640px) {
+
+ #main, #page {
+	-webkit-flex-flow: column;
+					flex-flow: column;
+ }
+
+ #main > article, #main > nav, #main > aside {
+	/* Return them to document order */
+	-webkit-order: 0;
+					order: 0;
+ }
+
+
 }

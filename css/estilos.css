@@ -4,7 +4,6 @@ body{
 	background-color: #02010a;
 	font-family: "Dancing Script";
 	font-size: 16px;
-	font-family: sans-serif;
 	display: block;
 }
 
@@ -27,7 +26,6 @@ header
 	padding-right: 360;
 }
 
-
 /* Ajusta el estilo del menu en la web */
 .menu li{
   width: 180px;
@@ -39,7 +37,7 @@ header
 .menu a{
 	color: white;
 	text-decoration: none;
-	font-size: 50px;
+	font-size: 20px;
 }
 
 .menu a:hover{
@@ -80,70 +78,87 @@ article
 	width: 50%;
 	}
 
-
-@media screen and (max-width: 900px){
-
-			#Columas
-				{
-					width: 100%;
-					margin: 0 auto;
-				}
-				#columna1
-				{
-				width: 100%;
-				}
-				#columna2
-				{
-				width: 100%;
-				}
-				#columna3
-				{
-				width: 100%;
-				}
-
-				header
-				{
-				width:100%;
-				}
-}
+	#columna1 img{
+		border: 2px solid black;
+		width: 60%;
+		text-shadow: 2px 2px 2px #02010a;
+	}
 
 
-/*Poner ajuste de acuerdo si es desktop o movil*/
+	#columna2 img{
+		border: 2px solid black;
+		width: 100%;
+		text-shadow: 2px 2px 2px #02010a;
 
-/* Desktop y laptop */
-
-#columna1 img{
-	border: 2px solid black;
-	width: 60%;
-	text-shadow: 2px 2px 2px #02010a;
-}
-
-
-#columna2 img{
-	border: 2px solid black;
-	width: 100%;
-	text-shadow: 2px 2px 2px #02010a;
-
-}
-#columna3 img{
-	border: 2px solid black;
-	width: 100%;
-	text-shadow: 2px 2px 2px #02010a;
-}
+	}
+	#columna3 img{
+		border: 2px solid black;
+		width: 100%;
+		text-shadow: 2px 2px 2px #02010a;
+	}
 
 
-#columna2 img:hover {
-	-moz-transform: rotate(10deg);
-  -o-transform: rotate(10deg);
-  -webkit-transform: rotate(10deg);
-   transform: rotate(10deg);
-}
+	#columna2 img:hover {
+		-moz-transform: rotate(10deg);
+	  -o-transform: rotate(10deg);
+	  -webkit-transform: rotate(10deg);
+	   transform: rotate(10deg);
+	}
 
-#columna3 img{
-	transition-property: width;
-	transition-duration: 0.5s;
-}
+	#columna3 img{
+		transition-property: width;
+		transition-duration: 0.5s;
+	}
 
-#columna3 img:hover{
-	width: 60%;
-}
+	#columna3 img:hover{
+		width: 60%;
+	}
+
+	/*Poner estilo al bloque del pie de pagina */
+
+	#PiePagina {
+		background-color: #C6d5c5;
+		margin: 0 auto;
+		padding: 10px;
+		text-align: justify;
+		color: black;
+		margin-left: 10%;
+		margin-right: 10%;
+		border-radius: 0px 0px 10px 10px;
+		}
+
+	.piepagina-contenedor{
+			width: 100%
+			color: black;
+	}
+
+	.piepagina-menu{
+			width: 100%;
+			max-width: 1000px;
+			margin: auto;
+			padding: 2px 0;
+			display: flex;
+			flex-wrap: wrap;
+	}
+
+	.piepagina-menu .footer-columna{
+			width: calc(100% /4);
+			text-align: justify;
+	}
+
+	.piepagina-menu .footer-columna h3{
+			font-size: 16px;
+			color: black;
+			margin-bottom: 20px;
+	}
+
+	.piepagina-menu .footer-columna span p{
+			font-family: "Dancing Script";
+			display: inline-block;
+			margin-top: 0px;
+			margin-left: 5px;
+			margin-bottom: 15px;
+			font-size: 12px;
+	}
+
+	/* FIN estilo al bloque del pie de pagina */
