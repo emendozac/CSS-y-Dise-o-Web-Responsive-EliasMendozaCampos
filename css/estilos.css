@@ -47,7 +47,6 @@ body {
 
 #Columas
 {
-	width: 960px;
   margin-left: 10%;
   margin-right: 10%;
 }
@@ -56,27 +55,23 @@ article
 {
 	box-sizing: border-box;
 	float:left;
-	height: 100%;
-	background-color: grey;
 	padding: 2%;
 	text-align: center;
-	height: 400px;
 }
 
 /*Imagen Central en esta sección color del bloque*/
 	#columna1
 	{
-	background-color: #82c3a6;
+  background-color: #82c3a6;
 	width: 100%;
 
 	}
 	#columna1 img{
 		border: 2px solid black;
-		width: 90%;
+		width: 100%;
 		text-shadow: 2px 2px 2px #02010a;
-		padding: 10px 10px 10px 10px;
 		margin-right: 40px;
-		height: 100%;
+		height: 300px;
 		text-align: center;
 
 	}
@@ -103,6 +98,8 @@ article
 	}
 
 	#columna3 img{
+    display: flex;
+		flex-direction: column;
 		border: 2px solid black;
 		width: 100%;
 		text-shadow: 2px 2px 2px #82c3a6;
@@ -132,11 +129,11 @@ article
 
 	/*Poner estilo al bloque del pie de pagina */
 
-	footer {
+	#PiePagina {
 		background-color: #C6d5c5;
 		margin: 0 auto;
 		padding: 10px;
-		text-align: justify;
+		text-align: left;
 		color: black;
 		margin-left: 10%;
 		margin-right: 10%;
@@ -150,7 +147,7 @@ article
 
 	.piepagina-menu{
 			width: 100%;
-			max-width: 1000px;
+			max-width: 95%;
 			margin: auto;
 			padding: 2px 0;
 			display: flex;
@@ -189,10 +186,125 @@ article
 
 	/* FIN estilo al bloque del pie de pagina */
 
+	/* INICIO animacion del las paginas*/
 
+#contenedor-fotos {
+	  display: flex;
+	  flex-direction: column;
+		animation-name: animacion;
+		animation-duration: 2s;
+	}
+	/* FIN animacion del las paginas*/
+
+#contenedor-fotos{
+		background-color: #F7D988;
+		text-align: center;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+#contenedor-fotos .fotosarriba{
+		display: flex;
+		flex-direction: row;
+
+	}
+
+#contenedor-fotos .fotosarriba .imagen1{
+		padding: 10px;
+		margin: 10px;
+		width: 80%;
+	}
+#contenedor-fotos .fotosarriba .imagen2{
+		padding: 10px;
+		margin: 10px;
+		width: 80%;
+	}
+#contenedor-fotos .fotosarriba .imagen3{
+		padding: 10px;
+		margin: 10px;
+		width: 80%;
+	}
+#contenedor-fotos .fotosarriba .imagen1 img{
+		border: 2px solid black;
+		width: 80%;
+		text-shadow: 2px 2px 2px #02010a;
+	}
+#contenedor-fotos .fotosarriba .imagen2 img{
+		border: 2px solid black;
+		width: 80%;
+		text-shadow: 2px 2px 2px #02010a;
+	}
+#contenedor-fotos .fotosarriba .imagen3 img{
+		border: 2px solid black;
+		width: 80%;
+		text-shadow: 2px 2px 2px #02010a;
+	}
+
+#contenedor-fotos .fotosabajo{
+		display: flex;
+		flex-direction: row;
+
+	}
+
+#contenedor-fotos .fotosabajo .imagen4{
+		padding: 10px;
+		margin: 10px;
+		width: 80%;
+	}
+#contenedor-fotos .fotosabajo .imagen5{
+		padding: 10px;
+		margin: 10px;
+		width: 80%;
+	}
+#contenedor-fotos .fotosabajo .imagen6{
+		padding: 10px;
+		margin: 10px;
+		width: 80%;
+	}
+#contenedor-fotos .fotosabajo .imagen4 img{
+		border: 2px solid black;
+		width: 80%;
+		text-shadow: 2px 2px 2px #02010a;
+	}
+#contenedor-fotos .fotosabajo .imagen5 img{
+		border: 2px solid black;
+		width: 80%;
+		text-shadow: 2px 2px 2px #02010a;
+	}
+#contenedor-fotos .fotosabajo .imagen6 img{
+		border: 2px solid black;
+		width: 80%;
+		text-shadow: 2px 2px 2px #02010a;
+	}
+
+	.imagen1 img{
+		-webkit-filter: blur(10px); /* Chrome, Safari, Opera */
+		filter: blur(10px);
+	}
+
+	.imagen2 img{
+		-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+		filter: grayscale(100%);
+	}
+	.imagen4 img{
+		-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+		filter: grayscale(100%);
+	}
+	.imagen6 img{
+		-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+		filter: grayscale(100%);
+	}
+
+.imagen3 img{
+	-webkit-filter: sepia(90%); /* Chrome, Safari, Opera */
+	filter: sepia(90%);
+}
+
+
+/*Utiliza media queries para manejar dos tamaños Desktop: con ancho de 900px o más y móvil con menos de 900px. */
 @media screen and (max-width: 900px){
 
-	#Columas, #Cabecera
+	#Columas, #Cabecera, #PiePagina, #contenedor-fotos
 	{
 		width: 90%;
 		margin: 0 auto;
@@ -202,16 +314,16 @@ article
 
 @media screen and (max-width: 640px){
 
-		#Columas, #Cabecera
+		#Columas, #Cabecera, #PiePagina, #contenedor-fotos
 	{
-		width: 100%;
+		width: 80%;
 		margin: 0 auto;
 	}
 }
 
 @media screen and (max-width: 900px){
 
-				#Columas, #Cabecera
+				#Columas, #Cabecera, #PiePagina, #contenedor-fotos
 				{
 					width: 100%;
 					margin: 0 auto;
@@ -228,9 +340,22 @@ article
 				{
 				width: 100%;
 				}
+				#contenedor-fotos .fotosarriba{
+						display: flex;
+						flex-direction: column;
 
-				header
-				{
-				width:100%;
+					}
+					#contenedor-fotos .fotosabajo{
+							display: flex;
+							flex-direction: column;
+
+						}
+
+				.piepagina-menu .footer-columna{
+						width: calc(100% /1);
+						text-align: justify;
+						display: inline-block;
+						font-size: 16px;
+
 				}
 }
