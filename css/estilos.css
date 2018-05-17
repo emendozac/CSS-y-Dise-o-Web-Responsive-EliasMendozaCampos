@@ -18,7 +18,7 @@ header
 	margin-right: 10%;
 	font-size: 20px;
 	font-family: "Dancing Script";
-	text-shadow: 2px 2px 2px #82c3a6;
+	text-shadow: 2px 2px 2px #02010a;
 }
 /* Ajusta el estilo del menu en la web */
 .menu li{
@@ -96,6 +96,7 @@ article
 		text-shadow: 2px 2px 2px #82c3a6;
 	}
 
+	/*Rotacion de la imagen paisajes*/
 
 	#columna2 img:hover {
 		-moz-transform: rotate(10deg);
@@ -103,6 +104,7 @@ article
 	  -webkit-transform: rotate(10deg);
 	   transform: rotate(10deg);
 	}
+	/*traslacion de la imagen retratos*/
 
 	#columna3 img{
 		transition-property: width;
@@ -110,7 +112,10 @@ article
 	}
 
 	#columna3 img:hover{
-		width: 60%;
+		transform: translateY(-5px);
+		transform: translateX(20px);
+		text-shadow: 2px 2px 2px #82c3a6;
+		border: 2px;
 	}
 
 	/*Poner estilo al bloque del pie de pagina */
@@ -143,17 +148,48 @@ article
 	.piepagina-menu .footer-columna{
 			width: calc(100% /4);
 			text-align: justify;
-			font-family: "Dancing Script";
 			display: inline-block;
-			font-size: 22px;
+			font-size: 16px;
 
 	}
 
 	.piepagina-menu .footer-columna h3{
-   		text-align: center;
+   		text-align: left;
 			color: black;
 			margin-bottom: 20px;
 	}
 
+	.piepagina-menu .footer-columna span{
+ 			text-align: left;
+			color: black;
+		}
+
+	.piepagina-menu .footer-columna li{
+	  width: 180px;
+		list-style: none;
+		float: left;
+
+	}
+
+	.piepagina-menu .footer-columna a{
+		text-decoration: none;
+	}
 
 	/* FIN estilo al bloque del pie de pagina */
+
+
+	@media all and (max-width: 640px) {
+
+	 body, #Cabecera, #Columnas, #PiePagina {
+		-webkit-flex-flow: column;
+						flex-flow: column;
+	 }
+
+	 #main > article, #main > nav, #main > aside {
+		/* Return them to document order */
+		-webkit-order: 0;
+						order: 0;
+	 }
+
+
+	}
