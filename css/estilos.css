@@ -93,7 +93,6 @@ article
 	#columna3 img{
 		border: 2px solid black;
 		width: 100%;
-		text-shadow: 2px 2px 2px #82c3a6;
 	}
 
 	/*Rotacion de la imagen paisajes*/
@@ -103,19 +102,18 @@ article
 	  -o-transform: rotate(10deg);
 	  -webkit-transform: rotate(10deg);
 	   transform: rotate(10deg);
-	}
-	/*traslacion de la imagen retratos*/
+		 text-shadow: 2px 2px 2px #82c3a6;
 
-	#columna3 img{
-		transition-property: width;
-		transition-duration: 0.5s;
 	}
+	/*traslacion de la imagen retratos
+	falta hacer el movimiento hacia arriba y la derecha*/
 
 	#columna3 img:hover{
-		transform: translateY(-5px);
-		transform: translateX(20px);
+		transform: translateX(20px) translateY(-5px);
 		text-shadow: 2px 2px 2px #82c3a6;
 		border: 2px;
+		transition-duration: 0.5s;
+
 	}
 
 	/*Poner estilo al bloque del pie de pagina */
