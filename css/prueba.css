@@ -1,3 +1,275 @@
+/*Poner estilo al cuerpo del programa */
+.Contenedor {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		font-size: 20px;
+		color: white;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-flow: row wrap;
+		flex-flow: row wrap;
+		background-color: #02010a;
+		font-family: "Dancing Script";
+}
+
+
+/*Poner estilo al Encabezado del programa */
+.Encabezado {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0;
+	background-color: #5b7989;
+	padding: 10px;
+	border-radius: 10px 10px 0px 0px;
+	text-shadow: 2px #02010a;
+	color: white;
+	margin-left: 10%;
+	margin-right: 1%;
+	font-size: 20px;
+}
+/* Ajusta el estilo del menu en la web */
+.menu li{
+  width: 100px;
+	list-style: none;
+	float: left;
+}
+
+.menu a{
+	color: white;
+	text-decoration: none;
+	font-size: 30px;
+	flex: 1;
+	display: block;
+}
+
+.menu a:hover{
+		background-color: #356AA0;
+}
+
+/*Poner estilo al bloque del una imagen */
+
+
+
+#resumen {
+	background-color: #669999;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0 auto;
+	padding: 10px;
+	margin-left: 10%;
+	margin-right: 10%;
+	font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+	text-align: center;
+}
+/*Poner estilo al bloque del dos imagen */
+
+#Dosfotos {
+  background-color: #F7D988;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0 auto;
+	padding: 10px;
+	margin-left: 10%;
+	margin-right: 10%;
+	font-size: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+
+/*Poner estilo al bloque del pie de pagina */
+
+#PiePagina {
+	background-color: #C6d5c5;
+	margin: 0 auto;
+	padding: 10px;
+	text-align: justify;
+	color: black;
+	margin-left: 10%;
+	margin-right: 10%;
+	border-radius: 0px 0px 10px 10px;
+	}
+
+.piepagina-contenedor{
+		width: 100%
+		color: black;
+}
+
+.piepagina-menu{
+		width: 100%;
+		max-width: 1000px;
+		margin: auto;
+		padding: 2px 0;
+		display: flex;
+		flex-wrap: wrap;
+}
+
+.piepagina-menu .footer-columna{
+		width: calc(100% /4);
+		text-align: justify;
+}
+
+.piepagina-menu .footer-columna h3{
+		font-size: 16px;
+		color: black;
+		margin-bottom: 20px;
+}
+
+.piepagina-menu .footer-columna span p{
+		font-family: "Dancing Script";
+		display: inline-block;
+		margin-top: 0px;
+		margin-left: 5px;
+		margin-bottom: 15px;
+		font-size: 12px;
+}
+
+/* FIN estilo al bloque del pie de pagina */
+
+/* INICIO animacion del las paginas*/
+
+.Contenedor {
+	animation-name: animacion;
+	animation-duration: 2s;
+}
+/* FIN animacion del las paginas*/
+
+/* INICIO ajuste de las paginas */
+/* Desktop y laptop */
+
+
+li>a {
+	line-height: 60px;
+	font-size: 16px;
+}
+}
+
+/* INICIO ajuste de las paginas */
+
+#imagen1 img{
+	border: 2px solid black;
+	width: 50%;
+	text-shadow: 2px 2px 2px #02010a;
+}
+
+
+#imagen2 img{
+	border: 2px solid black;
+	width: 80%;
+	text-shadow: 2px 2px 2px #02010a;
+}
+#imagen3 img{
+	border: 2px solid black;
+	width: 80%;
+	text-shadow: 2px 2px 2px #02010a;
+}
+
+
+#imagen2 img:hover {
+	-moz-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
+  -webkit-transform: rotate(10deg);
+   transform: rotate(10deg);
+}
+
+#imagen3 img{
+	transition-property: width;
+	transition-duration: 0.5s;
+}
+
+#imagen3 img:hover{
+	width: 60%;
+}
+
+.contenedor-fotos{
+	background-color: #F7D988;
+	text-align: center;
+	margin-left: 90px;
+	margin-right: 90px;
+}
+
+.contenedor-fotos .fotosarriba{
+	display: flex;
+	flex-direction: row;
+
+}
+
+.contenedor-fotos .fotosarriba .imagen1{
+	padding: 10px;
+	margin: 10px;
+	width: 80%;
+}
+.contenedor-fotos .fotosarriba .imagen2{
+	padding: 10px;
+	margin: 10px;
+	width: 80%;
+}
+.contenedor-fotos .fotosarriba .imagen3{
+	padding: 10px;
+	margin: 10px;
+	width: 80%;
+}
+.contenedor-fotos .fotosarriba .imagen1 img{
+	border: 2px solid black;
+	width: 80%;
+	text-shadow: 2px 2px 2px #02010a;
+}
+.contenedor-fotos .fotosarriba .imagen2 img{
+	border: 2px solid black;
+	width: 80%;
+	text-shadow: 2px 2px 2px #02010a;
+}
+.contenedor-fotos .fotosarriba .imagen3 img{
+	border: 2px solid black;
+	width: 80%;
+	text-shadow: 2px 2px 2px #02010a;
+}
+
+.contenedor-fotos .fotosabajo{
+	display: flex;
+	flex-direction: row;
+
+}
+
+.contenedor-fotos .fotosabajo .imagen1{
+	padding: 10px;
+	margin: 10px;
+	width: 80%;
+}
+.contenedor-fotos .fotosabajo .imagen2{
+	padding: 10px;
+	margin: 10px;
+	width: 80%;
+}
+.contenedor-fotos .fotosabajo .imagen3{
+	padding: 10px;
+	margin: 10px;
+	width: 80%;
+}
+.contenedor-fotos .fotosabajo .imagen1 img{
+	border: 2px solid black;
+	width: 80%;
+	text-shadow: 2px 2px 2px #02010a;
+}
+.contenedor-fotos .fotosabajo .imagen2 img{
+	border: 2px solid black;
+	width: 80%;
+	text-shadow: 2px 2px 2px #02010a;
+}
+.contenedor-fotos .fotosabajo .imagen3 img{
+	border: 2px solid black;
+	width: 80%;
+	text-shadow: 2px 2px 2px #02010a;
+}
+
+
 
 
 #contenido{
