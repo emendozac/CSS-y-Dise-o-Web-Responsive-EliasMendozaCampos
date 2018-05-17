@@ -1,12 +1,6 @@
-/*Poner estilo al cuerpo del programa */
-body{
-	color: white;
+body {
 	background-color: #02010a;
-	font-family: "Dancing Script";
-	font-size: 16px;
-	display: block;
 }
-
 /*Poner estilo al Encabezado del programa */
 
 header
@@ -15,15 +9,16 @@ header
 	flex-flow: row wrap;
 	justify-content: space-around;
 	align-items: center;
-	margin: 0 auto;
-	height: 1em;
-	padding-top: 2%;
-	padding-bottom: 2%;
-	text-align: center;
-	background-color: grey;
-	color:white;
-	padding-left: 260;
-	padding-right: 360;
+	margin: 0;
+	background-color: #5b7989;
+	padding: 10px;
+	border-radius: 10px 10px 0px 0px;
+	color: white;
+	margin-left: 10%;
+	margin-right: 10%;
+	font-size: 20px;
+	font-family: "Dancing Script";
+
 }
 
 /* Ajusta el estilo del menu en la web */
@@ -37,64 +32,67 @@ header
 .menu a{
 	color: white;
 	text-decoration: none;
-	font-size: 20px;
+	font-size: 30px;
 }
 
 .menu a:hover{
 		background-color: #356AA0;
 }
+/*Espacio entre el encabezado y columnas */
 
 #Columas
 {
-	width: 960px;
-	margin: 0 auto;
+	margin-left: 10%;
+	margin-right: 10%;
+
 }
 
 article
 {
 	box-sizing: border-box;
 	float:left;
-	height: 100%;
-	background-color: grey;
-	padding: 2%;
+	padding: 1%;
 	text-align: center;
-	height: 400px;
 }
-
+/*Imagen Central en esta sección color del bloque*/
 	#columna1
 	{
-	background-color: #91C9E8;
+	background-color: #82c3a6;
 	width: 100%;
-
+	text-align: cent4r;
+	height: 100%;
 	}
-	#columna2
-	{
-	background-color: #D1D1D1;
-	width: 50%;
-	}
-	#columna3
-	{
-	background-color: #3399CC;
-	width: 50%;
-	}
-
 	#columna1 img{
 		border: 2px solid black;
-		width: 60%;
+		width: 95%;
 		text-shadow: 2px 2px 2px #02010a;
+		padding: 10px;
 	}
 
+	/*Imagen secundaria en esta sección color del bloque*/
 
+	#columna2
+	{
+	background-color: #d5c75f;
+	width: 50%;
+	}
 	#columna2 img{
 		border: 2px solid black;
 		width: 100%;
-		text-shadow: 2px 2px 2px #02010a;
+		text-shadow: 2px 2px 2px #82c3a6;
 
 	}
+
+	#columna3
+	{
+	background-color: #d5c75f;
+	width: 50%;
+	}
+
 	#columna3 img{
 		border: 2px solid black;
 		width: 100%;
-		text-shadow: 2px 2px 2px #02010a;
+		text-shadow: 2px 2px 2px #82c3a6;
 	}
 
 
@@ -116,7 +114,7 @@ article
 
 	/*Poner estilo al bloque del pie de pagina */
 
-	#PiePagina {
+	footer {
 		background-color: #C6d5c5;
 		margin: 0 auto;
 		padding: 10px;
@@ -144,21 +142,17 @@ article
 	.piepagina-menu .footer-columna{
 			width: calc(100% /4);
 			text-align: justify;
+			font-family: "Dancing Script";
+			display: inline-block;
+			font-size: 22px;
+
 	}
 
 	.piepagina-menu .footer-columna h3{
-			font-size: 16px;
+   		text-align: center;
 			color: black;
 			margin-bottom: 20px;
 	}
 
-	.piepagina-menu .footer-columna span p{
-			font-family: "Dancing Script";
-			display: inline-block;
-			margin-top: 0px;
-			margin-left: 5px;
-			margin-bottom: 15px;
-			font-size: 12px;
-	}
 
 	/* FIN estilo al bloque del pie de pagina */
